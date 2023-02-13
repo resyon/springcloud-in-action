@@ -15,8 +15,6 @@
         <module>study</module>
         <module>channel</module>
         <module>common</module>
-        <module>renren-fast</module>
-        <module>renren-generator</module>
     </modules>
 
 </project>
