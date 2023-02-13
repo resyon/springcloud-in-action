@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-5.7
+    ports:
+      - "13306:3306"
+    volumes:
+      - ~/data/mysql-5.7/log:/var/log/mysql
+      - ~/data/mysql-5.7/data:/var/lib/mysql
+      - ~/data/mysql-5.7/conf:/etc/mysql/conf.d
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ~/data/redis/conf/redis.conf:/etc/redis/redis.conf
+
+  es:
+    image: elasticsearch:7.7.1
+    volumes:
+      - ~/data/elk/es/config
