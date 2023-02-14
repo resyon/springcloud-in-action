@@ -22,3 +22,14 @@
 | 学习       | study           |
 | 渠道       | channel         |
 
+## 微服务解决方案
+
+| 组件                           | 描述        |
+|------------------------------|-----------|
+| SpringCloudAlibaba::Nacos    | 注册中心/配置中心 |
+| SpringCloudAlibaba::Sentinel | 服务容错      |
+| SpringCloudAlibaba::Seata    | 分布式事务     |
+| SpringCloud::Ribbon          | 负载均衡      |
+| SpringCloud::Feign           | 远程调用      |
+| SpringCloud::Gateway         | API网关     |
+| SpringCloud::Sleuth          | 链路追踪      |
